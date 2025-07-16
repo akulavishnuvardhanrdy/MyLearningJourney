@@ -78,4 +78,4 @@ public void swap(int[] nums,int pnt1,int pnt2){
 ```
 
 ### Time Complexity: O(n)
-### Space Complexity: O(n)
+### Space Complexity: O(1)
