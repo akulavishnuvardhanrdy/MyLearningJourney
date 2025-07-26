@@ -18,19 +18,15 @@ Explanation: 3 is the smallest index in arr[], at which element (arr[3] = 10) is
 
 ``` java
     int upperBound(int[] arr, int target) {
-        int low = 0,high = arr.length-1;
-        int ans = arr.length;
+        int low =0, high = arr.length-1;
         while(low<=high){
             int mid = low+(high-low)/2;
-            if(arr[mid]>target){
-                ans = mid;
-                high = mid-1;
-            }
-            else{
+            if(arr[mid]<=target)
                 low = mid+1;
-            }
+            else
+                high = mid-1;
         }
-        return ans;
+        return high;
     }
 ```
 

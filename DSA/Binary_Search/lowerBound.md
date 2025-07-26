@@ -19,18 +19,15 @@ Explanation: Largest number less than or equal to 5 is 2, whose index is 1.
 ``` java
     static int findFloor(int[] arr, int x) {
         // write code here
-        int low = 0, high = arr.length-1;
-        int ans = -1;
+        int low =0, high = arr.length-1;
         while(low<=high){
-            int mid=low+(high-low)/2;
-            if(arr[mid]<=x) {
-                ans = mid;
-                low=mid+1;
-            }
+            int mid = low+(high-low)/2;
+            if(arr[mid]<=target)
+                low = mid+1;
             else
-                high=mid-1;
+                high = mid-1;
         }
-        return ans;
+        return low;
     }
 ```
 

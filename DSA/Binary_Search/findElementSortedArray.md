@@ -15,22 +15,24 @@ Explanation: 9 exists in nums and its index is 4
 
 ***
 
+### Solve: [https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/)
+
 # Optimal Solution 
 
 
 ``` java
     public int search(int[] nums, int target) {
-        return BinarySearch(nums,target,0,nums.length-1);
-    }
-    int BinarySearch(int nums[],int target,int left,int right){
-        if(left>right) return -1;
-        int mid = (left+right)/2;
-        if(nums[mid]==target)
-            return mid;
-        else if(nums[mid]<target)
-            return BinarySearch(nums,target,mid+1,right);
-        else
-            return BinarySearch(nums,target,left,mid-1);
+        int low = 0, high = nums.length-1;
+        while(low<=high){
+            int mid = low+(high-low)/2;
+            if(nums[mid]==target)
+                return mid;
+            if(nums[mid]<target)
+                low = mid+1;
+            else
+                high = mid-1;
+        }
+        return -1;
     }
 ```
 
