@@ -13,7 +13,9 @@ Input: nums = [1,1,2,3,3,4,4,8,8]
 
 Output: 2  
 
-***:   
+### Solve: [https://leetcode.com/problems/single-element-in-a-sorted-array/](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+
+***   
 
 
 # Optimal Solution  

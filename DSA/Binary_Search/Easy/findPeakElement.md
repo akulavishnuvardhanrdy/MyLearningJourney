@@ -17,6 +17,8 @@ Output: 2
 
 Explanation: 3 is a peak element and your function should return the index number 2.   
 
+### Solve: [https://leetcode.com/problems/find-peak-element/description/](https://leetcode.com/problems/find-peak-element/description/)
+
 ***   
 
 

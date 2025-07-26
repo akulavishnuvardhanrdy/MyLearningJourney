@@ -12,6 +12,8 @@ Output: 3
 
 Explanation: 3 is the smallest index in arr[], at which element (arr[3] = 10) is larger than 9.
 
+### Solve: [https://www.geeksforgeeks.org/problems/implement-upper-bound/1](https://www.geeksforgeeks.org/problems/implement-upper-bound/1)
+
 *** 
 
 # Optimal Solution 
@@ -26,7 +28,7 @@ Explanation: 3 is the smallest index in arr[], at which element (arr[3] = 10) is
             else
                 high = mid-1;
         }
-        return high;
+        return low;
     }
 ```
 

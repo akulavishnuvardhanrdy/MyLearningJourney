@@ -1,25 +1,23 @@
-# Question
-Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+# Question 
+Given a sorted array, arr[] and a number target, you need to find the number of occurrences of target in arr[]. 
 
-If target is not found in the array, return [-1, -1].
+##### Examples :
 
-You must write an algorithm with O(log n) runtime complexity.
+Input: arr[] = [1, 1, 2, 2, 2, 2, 3], target = 2
 
- 
+Output: 4
 
-##### Example 1:
-
-Input: nums = [5,7,7,8,8,10], target = 8
-
-Output: [3,4]  
-
-***
+Explanation: target = 2 occurs 4 times in the given array so the output is 4.
 
 
-# Optimal Solution
+### Solve [https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1](https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
+*** 
+
+
+# Optimal Solution 
 
 ``` java
-    public int[] searchRange(int[] nums, int target) {
+    int countFreq(int[] nums, int target) {
         int low = 0, high = nums.length-1;
         int ans[] = new int[2];
         while(low<=high){
@@ -30,7 +28,7 @@ Output: [3,4]
                 high = mid-1;
         }
         if(low>=nums.length || nums[low]!=target) 
-            return new int[]{-1,-1};
+            return 0;
         ans[0] = low;
 
         low = 0;
@@ -44,8 +42,9 @@ Output: [3,4]
         }
         ans[1] = high;
 
-        return ans;
-  }
+        return ans[1]-ans[0]+1;
+    }
+
 ```
 
 ### Time Complexity: O(2logN)  

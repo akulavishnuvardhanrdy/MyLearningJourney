@@ -11,6 +11,7 @@ Output: 1
 
 Explanation: Largest number less than or equal to 5 is 2, whose index is 1.
   
+### Solve: [https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1)
 
 ***
 

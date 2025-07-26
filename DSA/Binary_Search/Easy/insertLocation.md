@@ -11,6 +11,8 @@ Input: nums = [1,3,5,6], target = 5
 
 Output: 2
 
+### Solve: [https://leetcode.com/problems/search-insert-position/](https://leetcode.com/problems/search-insert-position/)
+
 ***
 
 # Optimal Solution
@@ -20,13 +22,13 @@ Output: 2
         int low =0, high = arr.length-1;
         while(low<=high){
             int mid = low+(high-low)/2;
-            if(arr[mid]==target)
-                return mid;
             if(arr[mid]<=target)
                 low = mid+1;
             else
                 high = mid-1;
         }
+        if(high>=0 && arr[high]==target)
+            return high;
         return low;
     }
 ```

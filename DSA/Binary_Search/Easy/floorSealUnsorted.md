@@ -16,6 +16,8 @@ Output: 6, 8
 
 Explanation: Floor of 7 is 6 and ceil of 7 is 8.  
 
+### Solve: [https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1](https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1)
+
 ***
 
 

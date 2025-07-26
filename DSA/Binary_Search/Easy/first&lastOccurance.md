@@ -1,21 +1,28 @@
-# Question 
-Given a sorted array, arr[] and a number target, you need to find the number of occurrences of target in arr[]. 
+# Question
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
 
-##### Examples :
+If target is not found in the array, return [-1, -1].
 
-Input: arr[] = [1, 1, 2, 2, 2, 2, 3], target = 2
+You must write an algorithm with O(log n) runtime complexity.
 
-Output: 4
+ 
 
-Explanation: target = 2 occurs 4 times in the given array so the output is 4.
+##### Example 1:
 
-*** 
+Input: nums = [5,7,7,8,8,10], target = 8
+
+Output: [3,4]  
 
 
-# Optimal Solution 
+### Solve: [https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+***
+
+
+# Optimal Solution
 
 ``` java
-    int countFreq(int[] nums, int target) {
+    public int[] searchRange(int[] nums, int target) {
         int low = 0, high = nums.length-1;
         int ans[] = new int[2];
         while(low<=high){
@@ -26,7 +33,7 @@ Explanation: target = 2 occurs 4 times in the given array so the output is 4.
                 high = mid-1;
         }
         if(low>=nums.length || nums[low]!=target) 
-            return 0;
+            return new int[]{-1,-1};
         ans[0] = low;
 
         low = 0;
@@ -40,9 +47,8 @@ Explanation: target = 2 occurs 4 times in the given array so the output is 4.
         }
         ans[1] = high;
 
-        return ans[1]-ans[0]+1;
-    }
-
+        return ans;
+  }
 ```
 
 ### Time Complexity: O(2logN)  

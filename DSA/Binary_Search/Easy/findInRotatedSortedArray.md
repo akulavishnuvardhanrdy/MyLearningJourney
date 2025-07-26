@@ -12,6 +12,7 @@ You must write an algorithm with O(log n) runtime complexity.
 Input: nums = [4,5,6,7,0,1,2], target = 0
 Output: 4
 
+### Solve: [https://leetcode.com/problems/search-in-rotated-sorted-array/description/](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 
 # Solutions  
 

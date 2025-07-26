@@ -19,6 +19,8 @@ Output: 1
 
 Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 
+### Solve [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+
 ***   
 
 
