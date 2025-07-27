@@ -13,6 +13,8 @@ Output: 1 2 3 4 5 6 7
 Explanation: Distinct elements including both the arrays are: 1 2 3 4 5 6 7.
 
 
+### Solve: [https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1](https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1)
+
 ***
 
 # BruteForce Solution

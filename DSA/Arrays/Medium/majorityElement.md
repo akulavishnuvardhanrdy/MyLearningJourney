@@ -13,6 +13,8 @@ Input: nums = [3,2,3]
 Output: 3
 
 
+### Solve: [https://leetcode.com/problems/majority-element/description/](https://leetcode.com/problems/majority-element/description/)
+
 ***
 
 # BruteForce Solution

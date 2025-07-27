@@ -17,6 +17,8 @@ Output: true
 Explanation: [1,2,3,4,5] is the original sorted array.
 You can rotate the array by x = 3 positions to begin on the element of value 3: [3,4,5,1,2].
 
+### Solve: [https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/)
+
 ***
 
 # BruteForce Solution

@@ -12,24 +12,25 @@ Output: 34
 
 Explanation: The largest element of the array is 35 and the second largest element is 34.
 
+### Solve: [https://www.geeksforgeeks.org/problems/second-largest3735/1](https://www.geeksforgeeks.org/problems/second-largest3735/1)
+
 ***
 
 # Brute Force Solution
 
 ``` java
-public int getSecondLargest(int[] arr) {
-    Arrays.sort(arr);
-    int n = arr.length;
-    int pos = -1;
-    for(int i=n-1;i>0;--i){
-        if(arr[i]!=arr[i-1]){
-            pos=i-1;
-            break;
+    public int getSecondLargest(int[] arr) {
+        int max = -1;
+        int sec = -1;
+        for(int i:arr){
+            if(i>max){
+                sec = max;
+                max =i;
+            }
+            if(i>sec && i!=max) sec = i;
         }
+        return sec;
     }
-    if(pos!=-1) return arr[pos];
-    return -1;
-}
 ```
 
 ### Time Complexity: O(n*logn)+O(n)

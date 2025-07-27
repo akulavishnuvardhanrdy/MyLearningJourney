@@ -10,6 +10,9 @@ Output: 90
 
 Explanation: The largest element of the given array is 90.
 
+
+### Solve[https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1](https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1)
+
 ***
 
 # Brute Force:

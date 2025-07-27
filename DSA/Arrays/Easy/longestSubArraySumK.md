@@ -11,6 +11,8 @@ Output: 6
 Explanation: Subarrays with sum = 15 are [5, 2, 7, 1], [10, 5] and [10, 5, 2, 7, 1, -10]. The length of the longest subarray with a sum of 15 is 6.
 
 
+### Solve: [https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1](https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1)
+
 ***
 
 # BruteForce Solution

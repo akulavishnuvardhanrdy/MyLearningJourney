@@ -11,6 +11,8 @@ Input: nums = [2,2,1]
 
 Output: 1
 
+### Solve: [https://leetcode.com/problems/single-number/description/](https://leetcode.com/problems/single-number/description/)
+
 ***
 
 # Brute Force:

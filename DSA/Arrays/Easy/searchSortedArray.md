@@ -10,6 +10,8 @@ Output: true
 
 Exlpanation: Since, 6 is present in the array at index 4 (0-based indexing), output is true.
 
+### Solve: [https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1](https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1)
+
 
 ***
 
