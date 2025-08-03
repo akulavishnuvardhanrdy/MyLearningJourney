@@ -1,11 +1,23 @@
-**Question**:  
-Given a doubly linked list. Your task is to reverse the doubly linked list and return its head  
+# Question
 
-**Solutions**:   
+Given a doubly linked list. Your task is to reverse the doubly linked list and return its head.
 
 
-**Optimal Solution**:  
 
+##### Example:
+
+Input: LinkedList: 3 <-> 4 <-> 5
+
+Output: 5 <-> 4 <-> 3
+
+
+
+### Solve: [https://www.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1](https://www.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1)
+   
+
+
+# Optimal Solution:  
+``` java
     public DLLNode reverseDLL(DLLNode head) {
         DLLNode pnt1 = head, temp, curr = head;
         if(pnt1==null || pnt1.next==null)
@@ -22,7 +34,6 @@ Given a doubly linked list. Your task is to reverse the doubly linked list and r
         }
         return curr;
     }
-
-    
-Time Complexity: O(N)  
-Space Complexity: O(1) 
+```
+### Time Complexity: O(N)  
+### Space Complexity: O(1)
