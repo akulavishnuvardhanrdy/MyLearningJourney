@@ -19,14 +19,15 @@ Output: [1,2,3]
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> node = new ArrayList<>();
         Stack<TreeNode> st = new Stack<>();
-        if(root == null) 
-            return node;
-        st.add(root);
-        while(!st.isEmpty()){
-            TreeNode curr = st.pop();
-            node.add(curr.val);
-            if(curr.right!=null) st.add(curr.right);
-            if(curr.left!=null) st.add(curr.left);
+        TreeNode curr = root;
+        while(curr!=null || !st.isEmpty()){
+            while(curr!=null){
+                st.add(curr);
+                node.add(curr.val);
+                curr = curr.left;
+            }
+            curr = st.pop();
+            curr = curr.right;
         }
         return node;
     }

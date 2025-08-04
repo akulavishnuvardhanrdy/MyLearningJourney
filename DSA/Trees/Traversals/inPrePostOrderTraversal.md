@@ -26,43 +26,38 @@ The Postorder traversal will be [5, 2, 3, 7, 6, 4, 1].
 # Optimal Solution:  
 ``` java
     public static List<List<Integer>> getTreeTraversal(TreeNode root) {
-        // Write your code here.
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> in = new ArrayList<>();
         List<Integer> pre = new ArrayList<>();
         List<Integer> post = new ArrayList<>();
-        Stack<Pair> st = new Stack<>();
-        st.add(new Pair(root,1));
-        while(!st.isEmpty()){
-            Pair curr = st.peek();
-            if(curr.pos==1){
-                pre.add(curr.node.data);
-                curr.pos++;
-                if(curr.node.left!=null) st.add(new Pair(curr.node.left,1));
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode curr = root;
+        while(curr!=null || !st.isEmpty()){
+            while(curr!=null){
+                st.push(curr);
+                pre.add(curr.data);
+                curr = curr.left;
             }
-            else if(curr.pos==2){
-                in.add(curr.node.data);
-                curr.pos++;
-                if(curr.node.right!=null) st.add(new Pair(curr.node.right,1));
+            TreeNode temp = st.peek().right;
+            if(temp==null){
+                temp = st.pop();
+                in.add(temp.data);
+                post.add(temp.data);
+                while(!st.isEmpty() && 
+                    temp==st.peek().right){
+                        temp = st.pop();
+                        post.add(temp.data);
+                }
             }
             else{
-                post.add(curr.node.data);
-                st.pop();
+                in.add(st.peek().data);
+                curr = temp;
             }
         }
         res.add(in);
         res.add(pre);
         res.add(post);
         return res;
-    }
-
-    static class Pair{
-        TreeNode node;
-        int pos;
-        Pair(TreeNode node,int pos){
-            this.node = node;
-            this.pos = pos;
-        }
     }
 ```
 ### Time Complexity: O(3N)  
