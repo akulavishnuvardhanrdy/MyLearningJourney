@@ -1,23 +1,28 @@
 # Question
 
-Given an array of integers arr, find the sum of min(b), where b ranges over every (contiguous) subarray of arr. Since the answer may be large, return the answer modulo 109 + 7.
+You are given an integer array nums. The range of a subarray of nums is the difference between the largest and smallest element in the subarray.
 
+Return the sum of all subarray ranges of nums.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
 
 
 ##### Example:
 
-Input: arr = [3,1,2,4]
+Input: nums = [1,2,3]
+Output: 4
+Explanation: The 6 subarrays of nums are the following:
+[1], range = largest - smallest = 1 - 1 = 0 
+[2], range = 2 - 2 = 0
+[3], range = 3 - 3 = 0
+[1,2], range = 2 - 1 = 1
+[2,3], range = 3 - 2 = 1
+[1,2,3], range = 3 - 1 = 2
+So the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4.
 
-Output: 17
-
-Explanation: 
-Subarrays are [3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4]. 
-Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.
-Sum is 17.
 
 
-
-### Solve: [https://leetcode.com/problems/sum-of-subarray-minimums/](https://leetcode.com/problems/sum-of-subarray-minimums/)
+### Solve: [https://leetcode.com/problems/sum-of-subarray-ranges/description/](https://leetcode.com/problems/sum-of-subarray-ranges/description/)
    
 
 
